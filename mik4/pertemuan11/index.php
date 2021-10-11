@@ -5,6 +5,15 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        button {
+            background-color: aqua;
+            border-style: solid;
+            border-color: white;
+            border-width: 1px;
+            height: 30px;
+        }
+    </style>
 </head>
 
 <body>
