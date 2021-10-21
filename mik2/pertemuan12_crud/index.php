@@ -20,7 +20,6 @@
             $lama_tanam = $_POST['lama_tanam'];
             $tgl_panen = $_POST['tgl_panen'];
 
-            echo $id.' '.$nm_tanaman.' '.$hasil_panen.' '.$lama_tanam.' '.$tgl_panen;
             if (!empty($nm_tanaman) && !empty($hasil_panen) && !empty($lama_tanam) && !empty($tgl_panen)) {
                 echo "simpan";
                 $sql = "INSERT INTO tabel_panen SET
