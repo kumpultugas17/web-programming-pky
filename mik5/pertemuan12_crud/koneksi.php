@@ -1,5 +1,13 @@
 <?php
+$servername = 'localhost';
+$username = 'root';
+$password = '';
+$database = 'db_pertanian_mik5';
 
-// --- koneksi ke database
-$koneksi = mysqli_connect("localhost", "root", "", "db_pertanian_mik5")
-  or die(mysqli_error());
+$koneksi = mysqli_connect($servername, $username, $password, $database);
+
+if (!$koneksi) {
+  die("Koneksi database gagal!, " . mysqli_connect_error());
+}
+
+echo 'Koneksi database berhasil!';
