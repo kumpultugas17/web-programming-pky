@@ -157,7 +157,27 @@
     }
   }
   // --- Tutup Fungsi Ubah Data
+  
+  // --- Fungsi Hapus Data (Delete)
+
+  function hapus($koneksi) {
+    if (isset($_GET['id']) && isset($_GET['aksi'])) {
+      $id = $_GET['id'];
+      $sql_hapus = "DELETE FROM tabel_panen WHERE id='$id'";
+      $hapus = mysqli_query($koneksi, $sql_hapus);
+
+      if ($hapus) {
+        if ($_GET['aksi'] == 'delete') {
+          header('Location: index.php');
+        }
+      }
+    }
+  }
+
+  // --- Tutup Hapus Data (Delete)
   ?>
+
+  
 
   <?php
   // --- pilihan Aksi
